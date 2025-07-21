@@ -69,10 +69,8 @@ ResNet18, MobileNetV2, EfficientNet
 
 - Objects obscured by other elements (e.g., trees, poles, people)
 
-4.  Background Removal or Focused Cropping
+4.  Focused Cropping
 - Use semantic segmentation or object detection (YOLO, Mask R-CNN) to:
-
-- Remove irrelevant background
 
 - Crop and center the main vehicle region
 
