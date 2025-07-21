@@ -34,19 +34,19 @@ git clone https://github.com/tachirevlt/vehicle_classification.git
 
 ## Evaluation
 
-|             | precision |   recall | f1-score |
+|             | precision |   recall | f1-score | 
 |-------------|-----------|----------|----------|
-|        Bus  |   0.5556  |  0.2941  |  0.3846  |
-|        Car  |   0.6000  |  0.4615  |  0.5217  |
-| motorcycle  |   0.2500  |  0.8571  |  0.3871  |
-|      Truck  |   0.9412  |  0.6957  |  0.8000  |
+|         Bus |    0.7273 |   0.4706 |   0.5714 |
+|         Car |    0.5000 |   0.4118 |   0.4516 |
+|  motorcycle |    0.3684 |   0.4375 |   0.4000 |
+|       Truck |    0.4375 |   0.7000 |   0.5385 |
 
-- The model performs well on the Truck class (F1-score: 0.8000), suggesting it learns the features of large vehicles effectively.
+- The current model (can be simple CNN) has not learned well for 4 classes.
 
-- Motorcycle has a high recall (0.8571) but low precision (0.2500), indicating the model often predicts motorcycle, even when incorrect.
+- Imbalance can be part of the cause → the most truck image, little motorcycle.
 
-- Bus and Car classes show moderate performance, suggesting room for improvement in capturing their distinguishing features.
-
+- Classes may have a overlapping image (eg bus vs truck).
+  
 ---
 
 ## Future Improvements
